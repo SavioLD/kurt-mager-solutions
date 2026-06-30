@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Produkte · Kurt Mager Solutions — Dreh-, Fräs-, Stanz-, Biege- &amp; Fließpressteile, Baugruppen</title>
+<meta name="description" content="Unser Lieferprogramm im Detail: Dreh-, Fräs-, Stanz-, Biege- und Fließpressteile sowie komplette Baugruppen – nach Ihren Vorgaben in Material, Präzision und Stückzahl." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231a8245'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='800' fill='white' text-anchor='middle'%3EKM%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css?v=18" />
+<link rel="stylesheet" href="css/content.css?v=7" />
+<style>
+  .psec{scroll-margin-top:90px}
+  .pwrap{max-width:900px;margin-inline:auto}
+  .pwrap h2{font-family:var(--disp);font-size:clamp(1.6rem,3.4vw,2.15rem);color:var(--ink);margin:8px 0 14px;line-height:1.1}
+  .pwrap .prose{max-width:74ch}
+  .pgal{column-count:3;column-gap:14px;margin:26px 0 4px}
+  .pgal--1{column-count:1;max-width:380px}
+  .pgal--2{column-count:2;max-width:560px}
+  .ptile{break-inside:avoid;margin:0 0 14px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:var(--sh)}
+  .ptile img{width:100%;height:auto;display:block;transition:transform .35s ease;cursor:zoom-in}
+  .ptile:hover img{transform:scale(1.05)}
+  .ps-ph{display:grid;place-items:center;background:var(--green-50);border:1px solid #cfe9da;border-radius:14px;aspect-ratio:4/3;max-width:380px;margin-top:26px}
+  .ps-ph svg{width:46%;color:var(--green);opacity:.9}
+  .psec .btn{margin-top:26px}
+  .psvc{list-style:none;margin:6px auto 0;padding:0;max-width:760px;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+  .psvc li{display:flex;gap:10px;align-items:flex-start;font-size:1rem;color:var(--ink)}
+  .psvc svg{width:18px;height:18px;color:var(--green);flex:0 0 auto;margin-top:3px}
+  @media(max-width:620px){.pgal{column-count:2;column-gap:12px}.ptile{margin-bottom:12px}.pgal--2{column-count:1}}
+  @media(max-width:560px){.psvc{grid-template-columns:1fr}}
+  /* Lightbox – Produktfotos antippen zum Vergrößern */
+  .lightbox{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;background:rgba(10,14,18,.93);padding:16px;cursor:zoom-out;-webkit-tap-highlight-color:transparent;opacity:0;transition:opacity .2s ease}
+  .lightbox.open{display:flex;opacity:1}
+  .lightbox img{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:12px;box-shadow:0 16px 50px rgba(0,0,0,.55)}
+  .lightbox__close{position:absolute;top:max(12px,env(safe-area-inset-top));right:16px;width:44px;height:44px;display:grid;place-items:center;background:rgba(255,255,255,.14);border:none;border-radius:50%;color:#fff;font-size:1.7rem;line-height:1;cursor:pointer}
+  .lightbox__hint{position:absolute;bottom:max(16px,env(safe-area-inset-bottom));left:0;right:0;text-align:center;color:rgba(255,255,255,.72);font-size:.85rem;pointer-events:none}
+</style>
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="shell topbar__inner">
+    <a href="index.html" class="brand" aria-label="Kurt Mager Solutions – Startseite">
+      <img class="brand__img" src="km-mark-transparent.png" alt="Kurt Mager Solutions" style="width:auto;display:block"><span class="brand__text">Kurt Mager Solutions</span>
+    </a>
+    <nav class="topbar__nav topbar__nav--corp" aria-label="Hauptnavigation">
+      <a href="unternehmen.html">Unternehmen</a>
+      <a href="team.html">Team</a>
+      <a href="index.html#produkte" aria-current="page" style="color:var(--green-700);background:var(--green-50)">Produkte</a>
+      <a href="werkstoffe.html">Werkstoffe</a>
+      <a href="prozesse.html">Prozesse</a>
+      <a href="infocenter.html">Infocenter</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="topbar__mobile" id="topbarMobile">
+    <a href="index.html">Startseite</a>
+    <a href="unternehmen.html">Unternehmen</a>
+    <a href="team.html">Unser Team</a>
+    <a href="index.html#produkte">Produkte</a>
+    <a href="werkstoffe.html">Werkstoffe</a>
+    <a href="prozesse.html">Prozesse</a>
+    <a href="infocenter.html">Infocenter</a>
+    <a href="rechner.html">Kostenrechner</a>
+    <a href="karriere.html">Karriere</a>
+    <a href="index.html#kontakt">Kontakt</a>
+    <a href="index.html#anfrage" class="btn btn--primary btn--block">Anfrage starten</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="subhero">
+  <div class="subhero__bg" aria-hidden="true"></div>
+  <div class="shell">
+    <span class="eyebrow"><span class="dot"></span>Produkte</span>
+    <h1>Unsere Produkte im Detail</h1>
+    <p>Vom Präzisionsdrehteil bis zur kompletten Baugruppe – ein Überblick über unser Lieferprogramm. <strong>Sie bestimmen Werkstoff, Präzision und Stückzahl, wir liefern die passende Lösung.</strong></p>
+  </div>
+</section>
+
+<!-- DREH- & FRÄSTEILE -->
+<section class="sec psec" id="prod-dreh-fraesteile">
+  <div class="shell pwrap">
+    <span class="eyebrow"><span class="dot"></span>Produkt</span>
+    <h2>Dreh- &amp; Frästeile</h2>
+    <div class="prose">
+      <p>Drehen und Fräsen gehören in der Bearbeitung meist zusammen – deshalb liefern wir beides aus einer Hand. Vom kurzen Automaten- und langen CNC-Drehteil bis zum mehrachsig gefrästen Bauteil (gängig fünf Achsen, bis Ø 300 mm) erhalten Sie Präzisionsteile in nahezu jeder Form, jedem Werkstoff und jeder Stückzahl.</p>
+      <p>Sie geben Material, Toleranzen und Menge vor – wir wählen das passende Verfahren und die richtige Fertigung im Netzwerk: kurven- oder CNC-gesteuerte Drehautomaten und Mehrspindel-/Rundtaktautomaten für große Serien sowie CNC-Bearbeitungszentren für komplexe Geometrien. Drehen, Fräsen, Bohren und Schleifen kombinieren wir dabei – inklusive Konturen, Schlitzen, Mehrkantfräsungen oder Querbohrungen, in Edelstahl, Aluminium, Messing, Kupfer, Kunststoff und Sonderwerkstoffen.</p>
+    </div>
+    <div class="pgal">
+      <figure class="ptile"><img src="drehfraes-1-kurt-mager.jpg?v=5" alt="Gedrehte Messingteile" loading="lazy"></figure>
+      <figure class="ptile"><img src="drehfraes-2-kurt-mager.jpg?v=5" alt="Gedrehte Präzisionsteile aus Stahl" loading="lazy"></figure>
+      <figure class="ptile"><img src="drehfraes-3-kurt-mager.jpg?v=5" alt="CNC-gefräste Präzisionsteile" loading="lazy"></figure>
+      <figure class="ptile"><img src="drehfraes-4-kurt-mager.jpg?v=5" alt="Gefrästes Bauteil mit Verzahnung" loading="lazy"></figure>
+      <figure class="ptile"><img src="drehfraes-5-kurt-mager.jpg?v=5" alt="Gefräste Präzisionsbauteile in Edelstahl und Messing" loading="lazy"></figure>
+      <figure class="ptile"><img src="drehfraes-6-kurt-mager.jpg?v=5" alt="Verschiedene CNC-Dreh- und Frästeile" loading="lazy"></figure>
+      <figure class="ptile"><img src="drehfraes-7-kurt-mager.jpg?v=5" alt="Gedrehte Gewindebuchsen aus Messing in Serie" loading="lazy"></figure>
+    </div>
+    <a class="btn btn--primary" href="index.html#anfrage">Anfrage starten
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- STANZTEILE -->
+<section class="sec sec--soft psec" id="prod-stanzteile">
+  <div class="shell pwrap">
+    <span class="eyebrow"><span class="dot"></span>Produkt</span>
+    <h2>Stanzteile</h2>
+    <div class="prose">
+      <p>Stanz- und Pressteile liefern wir wirtschaftlich in Klein- wie Großserie – maßhaltig, in gleichbleibender Qualität und just in time. Von einfachen Teilen bis zu komplexen Geometrien finden wir die passende Fertigung in unserem Herstellernetzwerk.</p>
+      <p>Moderne Stanzautomaten halten die Fertigungstoleranzen bei jeder Chargengröße ein und verarbeiten Teile mit 5 bis 80 Tonnen Presskraft. Auf Wunsch integrieren wir Nachbearbeitung, Oberflächenveredelung und die komplette Baugruppenmontage direkt in den Prozess.</p>
+    </div>
+    <div class="pgal pgal--1">
+      <figure class="ptile"><img src="stanzteile-1-kurt-mager.jpg?v=3" alt="Gestanzte Metallteile in verschiedenen Formen" loading="lazy"></figure>
+    </div>
+    <a class="btn btn--primary" href="index.html#anfrage">Anfrage starten
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- BIEGETEILE -->
+<section class="sec psec" id="prod-biegeteile">
+  <div class="shell pwrap">
+    <span class="eyebrow"><span class="dot"></span>Produkt</span>
+    <h2>Biegeteile</h2>
+    <div class="prose">
+      <p>Draht- und Biegeteile in allen Formen und Ausführungen – für einfache Standardteile in großer Menge ebenso wie für komplexe 3D-Biegegeometrien. Einfache Konturen entstehen auf Exzenter-Pressen mit individuellen Biegewerkzeugen, anspruchsvolle Formen auf CNC-Drahtbiegeautomaten.</p>
+      <p>Zusatzwünsche wie Prägungen, Laschen oder Querbohrungen setzen wir ebenso um wie Schweißarbeiten oder zusätzliches Fräsen. Auf Wunsch übernehmen wir Oberflächenbearbeitung, Baugruppenmontage und Verpackung – damit Ihre Biegeteile einbaufertig bei Ihnen ankommen.</p>
+    </div>
+    <div class="pgal pgal--1">
+      <figure class="ptile"><img src="biegeteile-1-kurt-mager.jpg?v=3" alt="Gebogene Draht- und Biegeteile" loading="lazy"></figure>
+    </div>
+    <a class="btn btn--primary" href="index.html#anfrage">Anfrage starten
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FLIESSPRESSTEILE -->
+<section class="sec sec--soft psec" id="prod-fliesspressteile">
+  <div class="shell pwrap">
+    <span class="eyebrow"><span class="dot"></span>Produkt</span>
+    <h2>Fließpressteile</h2>
+    <div class="prose">
+      <p>Auf Mehrstufenpressen kalt- und warmumgeformte Fließpressteile mit hoher Festigkeit – im Außendurchmesser von 3 bis 100 mm und 5 bis 180 mm Länge. Das Umformen unter Druck erlaubt komplexe, präzise Teile auch in großer Serie.</p>
+      <p>Typische Anwendungen reichen von Schließ-, Distanz- und Aufhängebolzen über Rast-, Verriegelungs- und Nietbolzen bis zu Buchsen, Doppelbolzen und Kugelzapfen – für Automobil-, Elektro- und Bauindustrie. Auf Wunsch mit spanender Nachbearbeitung, exakt nach Ihren Vorgaben.</p>
+    </div>
+    <div class="pgal">
+      <figure class="ptile"><img src="fliesspressteile-1-kurt-mager.jpg?v=3" alt="Kaltfließgepresste Buchsen mit Bund" loading="lazy"></figure>
+      <figure class="ptile"><img src="fliesspressteile-2-kurt-mager.jpg?v=3" alt="Fließpressteile – Bolzen, Zapfen und Umformteile" loading="lazy"></figure>
+      <figure class="ptile"><img src="fliesspressteile-3-kurt-mager.jpg?v=3" alt="Fließgepresste Bolzen" loading="lazy"></figure>
+      <figure class="ptile"><img src="fliesspressteile-4-kurt-mager.jpg?v=3" alt="Spannschrauben und Verbindungselemente" loading="lazy"></figure>
+    </div>
+    <a class="btn btn--primary" href="index.html#anfrage">Anfrage starten
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- BAUGRUPPEN -->
+<section class="sec psec" id="prod-baugruppen">
+  <div class="shell pwrap">
+    <span class="eyebrow"><span class="dot"></span>Produkt</span>
+    <h2>Baugruppen</h2>
+    <div class="prose">
+      <p>Mehrere Einzelteile werden bei uns zu einer einbaufertigen Einheit zusammengeführt: Wir übernehmen die komplette Baugruppenmontage – sorgfältig geplant, koordiniert und qualitätsgeprüft nach Ihren Zeichnungen und Toleranzen.</p>
+      <p>So sparen Sie Arbeitsschritte und haben Ihre Endprodukte schneller verfügbar als bei späterer Selbstmontage. Gerne kombinieren wir die Montage mit Nachbearbeitung, Veredelung und passender Verpackung – als kostensparendes Gesamtpaket aus einer Hand.</p>
+    </div>
+    <div class="pgal">
+      <figure class="ptile"><img src="baugruppen-1-kurt-mager.jpg?v=3" alt="Einbaufertige Baugruppe – Schelle" loading="lazy"></figure>
+      <figure class="ptile"><img src="baugruppen-2-kurt-mager.jpg?v=3" alt="Montierte Verbindungselemente" loading="lazy"></figure>
+      <figure class="ptile"><img src="baugruppen-3-kurt-mager.jpg?v=3" alt="Baugruppe – Gelenkbolzen" loading="lazy"></figure>
+      <figure class="ptile"><img src="baugruppen-4-kurt-mager.jpg?v=3" alt="Montierte Rahmenbauteile" loading="lazy"></figure>
+      <figure class="ptile"><img src="baugruppen-5-kurt-mager.jpg?v=3" alt="Baugruppe aus mehreren Einzelteilen" loading="lazy"></figure>
+      <figure class="ptile"><img src="baugruppen-6-kurt-mager.jpg?v=3" alt="Montierte Baugruppe mit Federelement" loading="lazy"></figure>
+    </div>
+    <a class="btn btn--primary" href="index.html#anfrage">Anfrage starten
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- SERVICE (gilt für alle Produkte) -->
+<section class="sec">
+  <div class="shell">
+    <header class="sec__head">
+      <span class="eyebrow eyebrow--center"><span class="dot"></span>Aus einer Hand</span>
+      <h2 class="sec__title">Das bieten wir zu jedem Produkt</h2>
+      <p class="sec__sub" style="margin-inline:auto;text-align:center">Mehr als nur Teile: Wir begleiten Ihr Projekt von der ersten Beratung bis zur einbaufertigen Lieferung.</p>
+    </header>
+    <ul class="psvc">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lieferant &amp; Lösungspartner</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Individuelle Kundenwünsche</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Prüfung &amp; Beratung Ihrer technischen Vorgaben</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Nachbearbeitung &amp; Oberflächenbearbeitung</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Baugruppenmontage</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Verpackungs-Service</li>
+    </ul>
+    <div style="text-align:center;margin-top:30px">
+      <a class="btn btn--primary btn--lg" href="index.html#anfrage">Jetzt unverbindlich anfragen
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__inner footer__inner--4">
+    <div class="footer__col footer__brand">
+      <a href="index.html" class="brand brand--footer" aria-label="Kurt Mager Solutions – Startseite">
+        <img class="brand__img" src="km-mark-transparent.png" alt="Kurt Mager Solutions" style="height:54px;width:auto;display:block"><span class="brand__text" style="font-size:1.15rem">Kurt Mager Solutions</span>
+      </a>
+      <p>Ihr prozessorientierter Lösungspartner und Komplettanbieter für die Metallverarbeitung.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Informationen</h4>
+      <ul>
+        <li><a href="unternehmen.html">Unternehmen</a></li>
+        <li><a href="team.html">Unser Team</a></li>
+        <li><a href="werkstoffe.html">Werkstoffe</a></li>
+        <li><a href="prozesse.html">Prozesse</a></li>
+        <li><a href="infocenter.html">Infocenter</a></li>
+        <li><a href="nachhaltigkeit.html">Nachhaltigkeit</a></li>
+        <li><a href="karriere.html">Karriere</a></li>
+        <li><a href="rechner.html">Kostenrechner</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Produkte</h4>
+      <ul>
+        <li><a href="produkte.html#prod-dreh-fraesteile">Dreh- &amp; Frästeile</a></li>
+        <li><a href="produkte.html#prod-stanzteile">Stanzteile</a></li>
+        <li><a href="produkte.html#prod-biegeteile">Biegeteile</a></li>
+        <li><a href="produkte.html#prod-fliesspressteile">Fließpressteile</a></li>
+        <li><a href="produkte.html#prod-baugruppen">Baugruppen</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Kontakt</h4>
+      <address>
+        Kurt Mager Solutions GmbH &amp; Co. KG<br />
+        Stuttgarter Straße 62<br />
+        78628 Neufra<br /><br />
+        Tel.: <a href="tel:+49741280014">+49 (0)741 / 28 00 14-0</a><br />
+        <a href="mailto:info@mager-solutions.de">info@mager-solutions.de</a>
+      </address>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/kurt-mager-solutions-gmbh-co-kg/" target="_blank" rel="noopener" class="social" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.4 8.5h3.1V21H3.4zM9.1 8.5h3v1.7h.04c.42-.8 1.45-1.64 2.98-1.64 3.2 0 3.8 2.1 3.8 4.8V21h-3.1v-5.5c0-1.3 0-3-1.85-3s-2.13 1.44-2.13 2.9V21h-3.1z"/></svg></a>
+        <a href="https://www.instagram.com/kurtmagersolutions/" target="_blank" rel="noopener" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <div class="shell footer__bar-inner">
+      <span>© <span id="year"></span> Kurt Mager Solutions GmbH &amp; Co. KG · <a href="impressum.html" style="color:inherit;text-decoration:underline">Impressum</a> · <a href="datenschutz.html" style="color:inherit;text-decoration:underline">Datenschutz</a></span>
+      <span class="footer__credit">Designkonzept &amp; Lead-Tool: <a href="https://www.laendle-digital.com" target="_blank" rel="noopener" style="color:#cdd9e7"><strong>Ländle Digital</strong></a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/enhance.js?v=1" defer></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  (function(){
+    var b = document.getElementById("burger"), m = document.getElementById("topbarMobile");
+    if(b&&m) b.addEventListener("click", function(){ var o=m.classList.toggle("open"); b.setAttribute("aria-expanded", o); });
+  })();
+  (function(){
+    var imgs = document.querySelectorAll(".pgal .ptile img");
+    if(!imgs.length || !document.body) return;
+    var ov = document.createElement("div"); ov.className = "lightbox";
+    ov.setAttribute("role","dialog"); ov.setAttribute("aria-modal","true");
+    var big = document.createElement("img");
+    var cls = document.createElement("button"); cls.className = "lightbox__close"; cls.setAttribute("aria-label","Schließen"); cls.innerHTML = "&times;";
+    var hint = document.createElement("div"); hint.className = "lightbox__hint"; hint.textContent = "Tippen zum Schließen";
+    ov.appendChild(big); ov.appendChild(cls); ov.appendChild(hint);
+    document.body.appendChild(ov);
+    function open(src, alt){ big.src = src; big.alt = alt || ""; ov.classList.add("open"); document.documentElement.style.overflow = "hidden"; }
+    function close(){ ov.classList.remove("open"); document.documentElement.style.overflow = ""; }
+    for(var i=0;i<imgs.length;i++){
+      imgs[i].addEventListener("click", (function(im){ return function(){ open(im.currentSrc || im.src, im.alt); }; })(imgs[i]));
+    }
+    ov.addEventListener("click", close);
+    document.addEventListener("keydown", function(e){ if(e.key === "Escape" || e.keyCode === 27) close(); });
+  })();
+</script>
+</body>
+</html>

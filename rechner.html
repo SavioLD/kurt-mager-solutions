@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beschaffungs-Rechner · Kurt Mager Solutions — Ihr Einsparpotenzial</title>
+<meta name="description" content="Was kostet Sie Ihre aktuelle Teile-Beschaffung wirklich? Berechnen Sie in 60 Sekunden Ihr jährliches Einsparpotenzial mit Kurt Mager Solutions als Beschaffungspartner – auf Basis Ihrer eigenen Zahlen." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a8245'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='800' fill='white' text-anchor='middle'%3EKM%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css?v=18" />
+<link rel="stylesheet" href="css/rechner.css?v=4" />
+</head>
+<body>
+
+<!-- ============================================================ TOPBAR ============================================================ -->
+<header class="topbar" id="topbar">
+  <div class="shell topbar__inner">
+    <a href="index.html" class="brand" aria-label="Kurt Mager Solutions – Startseite">
+      <img class="brand__img" src="km-mark-transparent.png" alt="Kurt Mager Solutions" style="width:auto;display:block"><span class="brand__text">Kurt Mager Solutions</span>
+    </a>
+    <nav class="topbar__nav topbar__nav--corp" aria-label="Hauptnavigation">
+      <a href="unternehmen.html">Unternehmen</a>
+      <a href="team.html">Team</a>
+      <a href="index.html#produkte">Produkte</a>
+      <a href="werkstoffe.html">Werkstoffe</a>
+      <a href="prozesse.html">Prozesse</a>
+      <a href="infocenter.html">Infocenter</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="topbar__mobile" id="topbarMobile">
+    <a href="index.html">Startseite</a>
+    <a href="unternehmen.html">Unternehmen</a>
+    <a href="team.html">Unser Team</a>
+    <a href="index.html#produkte">Produkte</a>
+    <a href="werkstoffe.html">Werkstoffe</a>
+    <a href="prozesse.html">Prozesse</a>
+    <a href="infocenter.html">Infocenter</a>
+    <a href="rechner.html">Kostenrechner</a>
+    <a href="karriere.html">Karriere</a>
+    <a href="index.html#kontakt">Kontakt</a>
+    <a href="index.html#anfrage" class="btn btn--primary btn--block">Anfrage starten</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================================================ HERO ============================================================ -->
+<section class="calc-hero">
+  <div class="calc-hero__bg" aria-hidden="true"></div>
+  <div class="shell">
+    <span class="eyebrow"><span class="dot"></span>Teile-Beschaffung · Kosten-Check</span>
+    <h1>Was kostet Sie Ihre aktuelle Teile-Beschaffung <u>wirklich</u>?</h1>
+    <p class="lead">Lange Lieferzeiten, gebundenes Kapital im Lager, Ausschuss und stehende Bänder: Die teuersten Kosten in der Beschaffung stehen auf <strong>keiner Rechnung</strong>. Berechnen Sie in 60 Sekunden, wie viel Sie pro Jahr mit <strong>Kurt Mager Solutions</strong> als Beschaffungspartner einsparen — auf Basis <strong>Ihrer eigenen Zahlen</strong>.</p>
+    <div class="tchips">
+      <span class="tchip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>DIN ISO 9001</span>
+      <span class="tchip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7 19.4a1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H1a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 4.6 7"/></svg>Komplettabwicklung</span>
+      <span class="tchip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>Maschinenbau · Möbel · Freizeit · Elektro</span>
+      <span class="tchip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>Ein Ansprechpartner</span>
+    </div>
+
+    <!-- live preview -->
+    <div class="livecard">
+      <div>
+        <span class="livecard__eyebrow"><span class="pulse"></span>Live-Vorschau · rechnet automatisch mit</span>
+        <div class="livecard__eu"><span class="cur">€</span><span class="num" id="livEuro">0</span><span class="per">/ Jahr</span></div>
+        <p class="livecard__note">Passen Sie unten Ihre Werte an — hier erscheint sofort Ihr <strong>ungefähres Einsparpotenzial pro Jahr</strong>.</p>
+      </div>
+      <div class="livecard__cta">
+        <a href="#auswertung" class="btn btn--primary js-scroll">Vollständige Auswertung
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <span class="small">Detaillierte Aufschlüsselung in unter 60 Sekunden.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ INPUTS ============================================================ -->
+<section class="calc">
+  <div class="shell">
+    <div class="calc__intro">
+      <h2>Ihre Beschaffungs-Situation</h2>
+      <p>Die Voreinstellungen sind typische Richtwerte aus der Zerspanungs- und Umformteil-Beschaffung. Passen Sie sie an Ihre Zahlen an — Sie können jeden Wert überschreiben.</p>
+    </div>
+
+    <!-- 01 Bedarf -->
+    <div class="block">
+      <div class="block__head">
+        <span class="block__num">01 / BEDARF</span>
+        <h3>Ihr Teile-Bedarf</h3>
+        <span class="block__tag" id="partlist">Bolzen · Buchsen · Wellen · Flansche · Adapter</span>
+      </div>
+      <div class="calc-grid">
+        <div class="cinput">
+          <label for="volumen">Jährliches Einkaufsvolumen Teile</label>
+          <div class="unitfield"><input class="input" type="number" id="volumen" value="250000" min="0" step="1000" inputmode="numeric"><span class="unit">€ / Jahr</span></div>
+          <input type="range" id="volumenRange" min="20000" max="2000000" step="10000" value="250000" aria-label="Einkaufsvolumen">
+          <p class="hint">Gesamtwert aller zerspanten/umgeformten Teile, die Sie pro Jahr einkaufen.</p>
+        </div>
+        <div class="cinput">
+          <label for="branche">Ihre Branche</label>
+          <select class="select" id="branche">
+            <option value="maschinenbau" selected>Maschinenbau</option>
+            <option value="moebel">Möbelindustrie</option>
+            <option value="freizeit">Freizeitindustrie</option>
+            <option value="elektro">Elektroindustrie</option>
+            <option value="automotive">Automotive</option>
+            <option value="sonstige">Sonstige</option>
+          </select>
+          <p class="hint">Lädt typische Teile &amp; Richtwerte.</p>
+        </div>
+        <div class="cinput">
+          <label for="lieferanten">Lieferanten für Teile</label>
+          <div class="unitfield"><input class="input" type="number" id="lieferanten" value="4" min="1" step="1" inputmode="numeric"><span class="unit">Stk</span></div>
+          <p class="hint">Wie viele Lieferanten beliefern Sie heute?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 Ist-Lage -->
+    <div class="block">
+      <div class="block__head">
+        <span class="block__num">02 / IST-LAGE</span>
+        <h3>Ihre aktuelle Liefersituation</h3>
+        <span class="block__tag">die versteckten Kostentreiber</span>
+      </div>
+      <div class="calc-grid calc-grid--4">
+        <div class="cinput">
+          <label for="lieferzeit">Ø Lieferzeit aktuell</label>
+          <div class="unitfield"><input class="input" type="number" id="lieferzeit" value="10" min="0" step="1" inputmode="numeric"><span class="unit">Wo</span></div>
+          <p class="hint">Wiederbeschaffungszeit Ihrer Teile.</p>
+        </div>
+        <div class="cinput">
+          <label for="sicherheitsbestand">Sicherheitsbestand</label>
+          <div class="unitfield"><input class="input" type="number" id="sicherheitsbestand" value="8" min="0" step="1" inputmode="numeric"><span class="unit">Wo</span></div>
+          <p class="hint">Lagerreichweite, die Sie vorhalten.</p>
+        </div>
+        <div class="cinput">
+          <label for="ausschuss">Reklamations-/Ausschussquote</label>
+          <div class="unitfield"><input class="input" type="number" id="ausschuss" value="2.5" min="0" step="0.1" inputmode="decimal"><span class="unit">%</span></div>
+          <p class="hint">Anteil fehlerhafter / reklamierter Teile.</p>
+        </div>
+        <div class="cinput">
+          <label for="stillstaende">Stillstände durch fehlende Teile</label>
+          <div class="unitfield"><input class="input" type="number" id="stillstaende" value="3" min="0" step="1" inputmode="numeric"><span class="unit">/ Jahr</span></div>
+          <p class="hint">Produktions-/Bandstopps wegen Lieferengpass.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- advanced -->
+    <details class="adv">
+      <summary>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+        Kostensätze &amp; Annahmen anpassen (volle Transparenz)
+        <svg class="adv__chev" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <div class="adv__body">
+        <div class="adv__sub">Kostensätze</div>
+        <div class="calc-grid">
+          <div class="cinput"><label for="kapitalkostensatz">Kapitalkostensatz</label><div class="unitfield"><input class="input" type="number" id="kapitalkostensatz" value="7" min="0" step="0.5" inputmode="decimal"><span class="unit">% p.a.</span></div><p class="hint">Zins auf gebundenes Kapital.</p></div>
+          <div class="cinput"><label for="lagerhaltungssatz">Lagerhaltungssatz</label><div class="unitfield"><input class="input" type="number" id="lagerhaltungssatz" value="11" min="0" step="0.5" inputmode="decimal"><span class="unit">% p.a.</span></div><p class="hint">Fläche, Handling, Schwund, Versicherung.</p></div>
+          <div class="cinput"><label for="kostenStillstand">Kosten je Stillstand</label><div class="unitfield"><input class="input" type="number" id="kostenStillstand" value="5000" min="0" step="100" inputmode="numeric"><span class="unit">€</span></div><p class="hint">Ausfall pro Produktions-/Bandstopp.</p></div>
+          <div class="cinput"><label for="bestellungen">Bestellungen / Jahr</label><div class="unitfield"><input class="input" type="number" id="bestellungen" value="48" min="0" step="1" inputmode="numeric"><span class="unit">Stk</span></div><p class="hint">Bestellvorgänge für Teile.</p></div>
+          <div class="cinput"><label for="bearbeitung">Bearbeitung je Bestellung</label><div class="unitfield"><input class="input" type="number" id="bearbeitung" value="85" min="0" step="5" inputmode="numeric"><span class="unit">€</span></div><p class="hint">Prozesskosten Disposition &amp; Einkauf.</p></div>
+          <div class="cinput"><label for="aufwandLieferant">Aufwand je Lieferant</label><div class="unitfield"><input class="input" type="number" id="aufwandLieferant" value="1500" min="0" step="100" inputmode="numeric"><span class="unit">€ / Jahr</span></div><p class="hint">Audits, Requalifizierung, Abstimmung.</p></div>
+        </div>
+        <div class="adv__sub">Verbesserung mit Kurt Mager Solutions (Annahmen)</div>
+        <div class="calc-grid">
+          <div class="cinput"><label for="redReichweite">Reduktion Lagerreichweite</label><div class="unitfield"><input class="input" type="number" id="redReichweite" value="35" min="0" max="100" step="1" inputmode="numeric"><span class="unit">%</span></div><p class="hint">Durch planbare, verlässliche Lieferung.</p></div>
+          <div class="cinput"><label for="redStillstaende">Reduktion Stillstände</label><div class="unitfield"><input class="input" type="number" id="redStillstaende" value="80" min="0" max="100" step="1" inputmode="numeric"><span class="unit">%</span></div><p class="hint">Termintreue Lieferung aus einer Hand.</p></div>
+          <div class="cinput"><label for="ffFaktor">Fehlerfolgekosten-Faktor</label><div class="unitfield"><input class="input" type="number" id="ffFaktor" value="2.5" min="1" step="0.1" inputmode="decimal"><span class="unit">×</span></div><p class="hint">Folgekosten je € Ausschuss (Nacharbeit, 8D).</p></div>
+          <div class="cinput"><label for="redAusschuss">Reduktion Ausschuss</label><div class="unitfield"><input class="input" type="number" id="redAusschuss" value="60" min="0" max="100" step="1" inputmode="numeric"><span class="unit">%</span></div><p class="hint">Geprüfte Qualität, DIN ISO 9001.</p></div>
+          <div class="cinput"><label for="redBestellaufwand">Reduktion Bestellaufwand</label><div class="unitfield"><input class="input" type="number" id="redBestellaufwand" value="30" min="0" max="100" step="1" inputmode="numeric"><span class="unit">%</span></div><p class="hint">Ein Ansprechpartner statt vieler.</p></div>
+          <div class="cinput"><label for="preispotenzial">Preispotenzial Bündelung</label><div class="unitfield"><input class="input" type="number" id="preispotenzial" value="5" min="0" max="100" step="0.5" inputmode="decimal"><span class="unit">%</span></div><p class="hint">Gebündeltes Volumen, weniger Schnittstellen.</p></div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============================================================ RESULT ============================================================ -->
+<section class="result">
+  <div class="shell">
+    <div class="result__hero">
+      <span class="result__eyebrow"><span class="pulse"></span>Live berechnet auf Basis Ihrer Angaben</span>
+      <p class="result__label">Ihr jährliches Einsparpotenzial</p>
+      <div class="result__euro"><span class="cur">€</span><span class="num" id="resEuro">0</span><span class="per">/ Jahr</span></div>
+      <div><span class="result__badge" id="resBadge">≈ 0 % Ihres Einkaufsvolumens</span></div>
+      <p class="result__desc">So viel lässt Ihre aktuelle Beschaffung <strong>Jahr für Jahr</strong> liegen — durch gebundenes Kapital, Ausschuss, Stillstände und Beschaffungsaufwand. Keine Marketing-Zahl: Die Summe ergibt sich <strong>rechnerisch</strong> aus Ihren Eingaben.</p>
+    </div>
+
+    <div class="result__3yr">
+      <span>Hochgerechnet auf <strong>3 Jahre</strong> Lieferbeziehung:</span>
+      <b id="res3yr">€ 0</b>
+    </div>
+
+    <div class="costsec">
+      <h3>So viel kostet Sie Ihre aktuelle Situation — heute schon.</h3>
+      <p>Diese Beträge zahlen Sie aktuell, ohne dass sie auf einer Rechnung auftauchen:</p>
+      <div class="costboxes">
+        <div class="costbox"><b id="costStill">€ 0</b><span>Ausfall durch Stillstände &amp; verspätete Teile / Jahr</span></div>
+        <div class="costbox"><b id="costQual">€ 0</b><span>Fehler- &amp; Reklamationskosten durch Ausschuss / Jahr</span></div>
+        <div class="costbox"><b id="costCapital">€ 0</b><span>Kapital im Lager gebunden (lange Lieferzeit)</span></div>
+      </div>
+    </div>
+
+    <!-- breakdown + lead form -->
+    <div class="leadcard" id="auswertung">
+      <span class="leadcard__eyebrow"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block"></span>Vollständige Auswertung</span>
+      <h2>Sehen Sie Ihre <em>komplette</em> Aufschlüsselung — kostenlos.</h2>
+      <p class="leadcard__p">Die vollständige Aufschlüsselung (Kapitalbindung, Stillstand, Qualität, Beschaffungs-Prozess und Preispotenzial) erhalten Sie inkl. persönlicher Einschätzung, welche Ihrer Teile sich am schnellsten umstellen lassen. Dauert keine 30 Sekunden. In der Regel melden wir uns zeitnah.</p>
+
+      <div class="lockwrap" id="breakdownLock">
+        <div class="breakdown" aria-hidden="false">
+          <div class="brow"><span>Kapitalbindung &amp; Lager</span><b id="bdCapital">€ 0</b></div>
+          <div class="brow"><span>Stillstände &amp; Termintreue</span><b id="bdStill">€ 0</b></div>
+          <div class="brow"><span>Qualität &amp; Ausschuss</span><b id="bdQual">€ 0</b></div>
+          <div class="brow"><span>Beschaffungs-Prozess (Bestellungen, Lieferanten)</span><b id="bdProcess">€ 0</b></div>
+          <div class="brow"><span>Preispotenzial durch Bündelung</span><b id="bdPreis">€ 0</b></div>
+          <div class="brow brow--total"><span>Gesamtes Einsparpotenzial / Jahr</span><b id="bdTotal">€ 0</b></div>
+        </div>
+        <div class="lockover" aria-hidden="true">
+          <span class="lockover__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Nach dem Freischalten sichtbar</span>
+          <span class="lockover__t">Vollständige Aufschlüsselung nach Kapital, Stillstand, Qualität, Prozess &amp; Preispotenzial</span>
+        </div>
+      </div>
+
+      <form id="leadForm" novalidate style="margin-top:24px">
+        <div class="leadgrid">
+          <div class="field"><label for="lf_vorname">Vorname *</label><input class="input" id="lf_vorname" placeholder="Max"><div class="err-msg" data-for="lf_vorname">Bitte Vornamen angeben.</div></div>
+          <div class="field"><label for="lf_nachname">Nachname *</label><input class="input" id="lf_nachname" placeholder="Mustermann"><div class="err-msg" data-for="lf_nachname">Bitte Nachnamen angeben.</div></div>
+          <div class="field full"><label for="lf_firma">Firma *</label><input class="input" id="lf_firma" placeholder="Musterfirma GmbH"><div class="err-msg" data-for="lf_firma">Bitte Firma angeben.</div></div>
+          <div class="field"><label for="lf_email">E-Mail *</label><input class="input" type="email" id="lf_email" placeholder="name@firma.de"><div class="err-msg" data-for="lf_email">Bitte gültige E-Mail angeben.</div></div>
+          <div class="field"><label for="lf_phone">Telefon <span class="opt-tag">(optional)</span></label><input class="input" type="tel" id="lf_phone" placeholder="optional"></div>
+          <div class="field full"><label for="lf_position">Ihre Position <span class="opt-tag">(optional)</span></label>
+            <select class="select" id="lf_position">
+              <option value="">— bitte wählen (optional) —</option>
+              <option>Einkauf / Beschaffung</option>
+              <option>Konstruktion / Entwicklung</option>
+              <option>Fertigung / Produktion</option>
+              <option>Qualitätssicherung</option>
+              <option>Geschäftsführung</option>
+              <option>Sonstige</option>
+            </select>
+          </div>
+        </div>
+        <label class="check full" style="margin:14px 0 4px"><input type="checkbox" id="lf_privacy"><span>Ich möchte die vollständige Auswertung erhalten und bin mit einer Kontaktaufnahme zur Besprechung der Ergebnisse einverstanden. Angaben gemäß Datenschutzerklärung. *</span></label>
+        <div class="err-msg" data-for="lf_privacy">Bitte bestätigen Sie die Einwilligung.</div>
+        <div class="lead-foot">
+          <button type="submit" class="btn btn--primary btn--lg" id="lfSubmit">Vollständige Auswertung freischalten
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>100 % kostenlos · kein Newsletter</span>
+        </div>
+      </form>
+
+      <div id="leadDone" hidden></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER ============================================================ -->
+<footer class="footer">
+  <div class="shell footer__inner footer__inner--4">
+    <div class="footer__col footer__brand">
+      <a href="index.html" class="brand brand--footer" aria-label="Kurt Mager Solutions – Startseite">
+        <img class="brand__img" src="km-mark-transparent.png" alt="Kurt Mager Solutions" style="height:54px;width:auto;display:block"><span class="brand__text" style="font-size:1.15rem">Kurt Mager Solutions</span>
+      </a>
+      <p>Ihr prozessorientierter Lösungspartner und Komplettanbieter für die Metallverarbeitung.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Informationen</h4>
+      <ul>
+        <li><a href="unternehmen.html">Unternehmen</a></li>
+        <li><a href="team.html">Unser Team</a></li>
+        <li><a href="werkstoffe.html">Werkstoffe</a></li>
+        <li><a href="prozesse.html">Prozesse</a></li>
+        <li><a href="infocenter.html">Infocenter</a></li>
+        <li><a href="nachhaltigkeit.html">Nachhaltigkeit</a></li>
+        <li><a href="karriere.html">Karriere</a></li>
+        <li><a href="rechner.html">Kostenrechner</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Produkte</h4>
+      <ul>
+        <li>Dreh- &amp; Frästeile</li><li>Stanzteile</li><li>Biegeteile</li><li>Fließpressteile</li><li>Baugruppen</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Kontakt</h4>
+      <address>
+        Kurt Mager Solutions GmbH &amp; Co. KG<br />
+        Stuttgarter Straße 62<br />
+        78628 Neufra<br /><br />
+        Tel.: <a href="tel:+49741280014">+49 (0)741 / 28 00 14-0</a><br />
+        <a href="mailto:info@mager-solutions.de">info@mager-solutions.de</a>
+      </address>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/kurt-mager-solutions-gmbh-co-kg/" target="_blank" rel="noopener" class="social" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.4 8.5h3.1V21H3.4zM9.1 8.5h3v1.7h.04c.42-.8 1.45-1.64 2.98-1.64 3.2 0 3.8 2.1 3.8 4.8V21h-3.1v-5.5c0-1.3 0-3-1.85-3s-2.13 1.44-2.13 2.9V21h-3.1z"/></svg></a>
+        <a href="https://www.instagram.com/kurtmagersolutions/" target="_blank" rel="noopener" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <div class="shell footer__bar-inner">
+      <span>© <span id="year"></span> Kurt Mager Solutions GmbH &amp; Co. KG · <a href="impressum.html" style="color:inherit;text-decoration:underline">Impressum</a> · <a href="datenschutz.html" style="color:inherit;text-decoration:underline">Datenschutz</a></span>
+      <span class="footer__credit">Designkonzept &amp; Lead-Tool: <a href="https://www.laendle-digital.com" target="_blank" rel="noopener" style="color:#cdd9e7"><strong>Ländle Digital</strong></a></span>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="js/rechner.js?v=7" defer></script>
+<script src="js/enhance.js?v=1" defer></script>
+<script src="js/jobpopup.js?v=1" defer></script>
+</body>
+</html>
