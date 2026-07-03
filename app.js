@@ -401,7 +401,6 @@
       "Telefon: " + (state.phone || "—"),
       "Referenz: " + ref,
     ];
-    const mailto = "mailto:info@mager-solutions.de?subject=" + encodeURIComponent("Anfrage über Konfigurator – " + ref) + "&body=" + encodeURIComponent(lines.join("\n"));
     wizard.classList.remove("has-prev");
     progress.querySelectorAll(".pstep").forEach((p) => { p.classList.remove("is-active"); p.classList.add("is-done"); p.querySelector(".pstep__num").innerHTML = I.check; });
     $(".wizard__nav").style.display = "none";
@@ -409,11 +408,10 @@
     body.innerHTML = `<div class="done">
         <div class="done__badge">${I.party}</div>
         <h3>Anfrage komplett — danke, ${esc(state.name.split(" ")[0] || "")}!</h3>
-        <p id="kmSendMsg">Ihre Anfrage wird an Kurt Mager Solutions übermittelt …</p>
+        <p id="kmSendMsg">Ihre Anfrage wird übermittelt …</p>
         <div class="done__ref">Ihre Referenz: <b>${ref}</b></div>
         <div class="done__actions">
-          <a class="btn btn--primary" id="kmMailBtn" href="${mailto}" style="display:none">Anfrage als E-Mail senden</a>
-          <button type="button" class="btn btn--ghost" id="restart">Neue Anfrage starten</button>
+          <button type="button" class="btn btn--primary" id="restart">Neue Anfrage starten</button>
         </div>
       </div>`;
     $("#restart").addEventListener("click", reset);
@@ -444,12 +442,12 @@
       body: JSON.stringify(payload),
     }).then((r) => r.json()).then((d) => {
       const m = document.getElementById("kmSendMsg");
-      if (d && d.success) { if (m) m.textContent = "Ihre Anfrage ist bei uns eingegangen. Ihr fester Ansprechpartner meldet sich zeitnah mit einem passgenauen Angebot."; }
-      else { throw new Error("x"); }
-    }).catch(() => {
-      const m = document.getElementById("kmSendMsg"), b = document.getElementById("kmMailBtn");
-      if (m) m.textContent = "Fast geschafft – bitte senden Sie Ihre Anfrage mit einem Klick ab:";
-      if (b) b.style.display = "";
+      if (d && d.success) { if (m) m.textContent = "Ihre Anfrage ist bei uns eingegangen – Ihr fester Ansprechpartner meldet sich zeitnah mit einem passgenauen Angebot."; }
+      else { if (m) m.textContent = "Da ist leider etwas schiefgelaufen. Bitte versuchen Sie es gleich noch einmal oder kontaktieren Sie uns direkt: info@mager-solutions.de · 0741 280014-0."; console.error("Web3Forms Antwort:", d); }
+    }).catch((err) => {
+      const m = document.getElementById("kmSendMsg");
+      if (m) m.textContent = "Da ist leider etwas schiefgelaufen. Bitte versuchen Sie es gleich noch einmal oder kontaktieren Sie uns direkt: info@mager-solutions.de · 0741 280014-0.";
+      console.error("Web3Forms Fehler:", err);
     });
   }
 

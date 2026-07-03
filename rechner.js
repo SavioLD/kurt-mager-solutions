@@ -154,7 +154,6 @@
       "",
       "Referenz: " + ref,
     ].join("\n");
-    const mailto = "mailto:info@mager-solutions.de?subject=" + encodeURIComponent("Beschaffungs-Rechner – Auswertung " + g("lf_firma") + " (" + ref + ")") + "&body=" + encodeURIComponent(body);
 
     form.hidden = true;
     const bl = $("#breakdownLock"); if (bl) bl.classList.add("unlocked");
@@ -166,13 +165,12 @@
         <p>Wir haben Ihr Einsparpotenzial von <strong>${fmt(r.total)} / Jahr</strong> erfasst und melden uns zur persönlichen Besprechung der Ergebnisse — in der Regel zeitnah.</p>
         <div class="done__ref">Ihre Referenz: <b>${ref}</b></div>
         <div class="done__actions">
-          <a class="btn btn--primary" href="${mailto}">Auswertung als E-Mail senden</a>
           <button type="button" class="btn btn--ghost" id="lfRestart">Neue Berechnung</button>
         </div>
       </div>`;
     (document.getElementById("auswertung") || done).scrollIntoView({ behavior: "smooth", block: "start" });
     if (window.__kmBurst) window.__kmBurst();
-    // zuverlässige Übermittlung an den Posteingang (Backend); der Button oben bleibt als manuelle Alternative
+    // zuverlässige Übermittlung an den Posteingang via Web3Forms
     fetch("https://api.web3forms.com/submit", {
       method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
@@ -195,7 +193,7 @@
         "Ausschussquote %": g("ausschuss"),
         "Stillstände/Jahr": g("stillstaende"),
       }),
-    }).catch(() => {});
+    }).then((r) => r.json()).then((d) => { if (!(d && d.success)) console.error("Web3Forms (Rechner):", d); }).catch((e) => console.error("Web3Forms (Rechner) Fehler:", e));
     $("#lfRestart").addEventListener("click", () => { done.hidden = true; done.innerHTML = ""; form.hidden = false; form.reset(); if (bl) bl.classList.remove("unlocked"); render(); form.scrollIntoView({ behavior: "smooth", block: "center" }); });
   });
 

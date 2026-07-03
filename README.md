@@ -1,4 +1,2 @@
 # Kurt Mager Solutions – Website
-
-Statische Website (HTML/CSS/JS), Deployment via GitHub Pages.
-Live-Domain: https://mager-solutions.de
+Statische Website, GitHub Pages. Live: https://mager-solutions.de
