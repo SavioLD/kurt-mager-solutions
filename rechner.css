@@ -116,7 +116,7 @@ input[type=range]::-moz-range-thumb{width:22px;height:22px;border:3px solid #fff
   .livecard__cta .small{text-align:left}
   .leadgrid{grid-template-columns:1fr}
 }
-@media (max-width:560px){.calc-grid,.costboxes{grid-template-columns:1fr}.block__tag{margin-left:0;flex-basis:100%}.result__3yr{flex-direction:column;align-items:flex-start}}
+@media (max-width:560px){.calc-grid,.costboxes{grid-template-columns:1fr}.block__tag{margin-left:0;flex-basis:100%}.result__3yr{flex-direction:column;align-items:flex-start}.lead-foot{flex-direction:column;align-items:stretch}.lead-foot .btn{width:100%;justify-content:center}.lead-foot .ok{justify-content:center;text-align:center}}
 
 /* gated breakdown (erst nach Freischalten sichtbar) */
 .lockwrap{position:relative;margin-top:22px}

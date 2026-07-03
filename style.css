@@ -371,6 +371,8 @@ input[type=range]::-moz-range-thumb{width:22px;height:22px;border:3px solid #fff
   .hero__title{font-size:2rem}
 }
 @media (max-width:560px){
+  /* Buttons: nie breiter als der Platz – lange Beschriftungen brechen um */
+  .btn{white-space:normal;max-width:100%;min-width:0;text-align:center}
   /* Wizard-Navigation: Buttons untereinander, nichts wird abgeschnitten */
   .wizard__nav{flex-wrap:wrap;gap:10px}
   .wizard__nav .btn{width:100%;justify-content:center}

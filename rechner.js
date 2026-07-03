@@ -179,7 +179,7 @@
         from_name: "Website Kurt Mager Solutions",
         botcheck: "",
         Referenz: ref,
-        "Einsparpotenzial/Jahr": fmt(r.total) + " (" + r.pct.toFixed(1).replace(".", ",") + " %)",
+        "Einsparpotenzial pro Jahr": fmt(r.total) + " (" + r.pct.toFixed(1).replace(".", ",") + " %)",
         "Auf 3 Jahre": fmt(r.total * 3),
         Name: g("lf_vorname") + " " + g("lf_nachname") + (g("lf_position") ? " (" + g("lf_position") + ")" : ""),
         Firma: g("lf_firma"),
@@ -188,10 +188,10 @@
         Einkaufsvolumen: g("volumen") + " € / Jahr",
         Branche: branche ? branche.options[branche.selectedIndex].text : "",
         Lieferanten: g("lieferanten"),
-        "Lieferzeit (Wochen)": g("lieferzeit"),
-        "Sicherheitsbestand (Wochen)": g("sicherheitsbestand"),
-        "Ausschussquote %": g("ausschuss"),
-        "Stillstände/Jahr": g("stillstaende"),
+        "Lieferzeit in Wochen": g("lieferzeit"),
+        "Sicherheitsbestand in Wochen": g("sicherheitsbestand"),
+        "Ausschussquote in Prozent": g("ausschuss"),
+        "Stillstaende pro Jahr": g("stillstaende"),
       }),
     }).then((r) => r.json()).then((d) => { if (!(d && d.success)) console.error("Web3Forms (Rechner):", d); }).catch((e) => console.error("Web3Forms (Rechner) Fehler:", e));
     $("#lfRestart").addEventListener("click", () => { done.hidden = true; done.innerHTML = ""; form.hidden = false; form.reset(); if (bl) bl.classList.remove("unlocked"); render(); form.scrollIntoView({ behavior: "smooth", block: "center" }); });
