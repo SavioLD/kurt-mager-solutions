@@ -367,7 +367,7 @@
 
 </main>
 
-<script src="app.js?v=13" defer></script>
+<script src="app.js?v=14" defer></script>
 <script src="enhance.js?v=1" defer></script>
 <script src="jobpopup.js?v=1" defer></script>
 <script>
@@ -388,7 +388,7 @@
       hint.textContent='Wird gesendet …';
       fetch('https://api.web3forms.com/submit',{
         method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
-        body:JSON.stringify({access_key:'c6eb7fa2-94d4-467d-9405-d3d36699123d',subject:subj,from_name:'Website Kurt Mager Solutions',botcheck:'',Name:name,Telefon:(tel||'—'),email:mail,Anliegen:msg})
+        body:JSON.stringify({access_key:'c6eb7fa2-94d4-467d-9405-d3d36699123d',subject:subj,from_name:'Website Kurt Mager Solutions',botcheck:'',Name:name,name:name,Telefon:(tel||'—'),email:mail,Anliegen:msg})
       }).then(function(r){return r.json();}).then(function(d){
         if(d&&d.success){ f.reset(); hint.textContent='Danke! Ihre Nachricht ist bei uns eingegangen – wir melden uns zeitnah.'; }
         else { throw new Error('x'); }

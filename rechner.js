@@ -182,6 +182,7 @@
         "Einsparpotenzial pro Jahr": fmt(r.total) + " (" + r.pct.toFixed(1).replace(".", ",") + " %)",
         "Auf 3 Jahre": fmt(r.total * 3),
         Name: g("lf_vorname") + " " + g("lf_nachname") + (g("lf_position") ? " (" + g("lf_position") + ")" : ""),
+        name: g("lf_vorname") + " " + g("lf_nachname"),
         Firma: g("lf_firma"),
         email: g("lf_email"),
         Telefon: g("lf_phone") || "—",

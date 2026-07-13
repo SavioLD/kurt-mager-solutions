@@ -444,6 +444,7 @@
       Anmerkungen: state.notes || "—",
       Firma: state.company || "—",
       Ansprechpartner: state.name + (state.position ? " (" + state.position + ")" : ""),
+      name: state.name,
       email: state.email || "",
       Telefon: state.phone || "—",
     };
